@@ -4,6 +4,7 @@
 
 ## 在线访问
 
+- 中国大陆访问版：https://home-1-d9gyvp1ov25e2d5d9-1454842460.tcloudbaseapp.com
 - 国际公开版：https://youning-han-waseda-portfolio.survive225.chatgpt.site
 
 ## 本地运行
