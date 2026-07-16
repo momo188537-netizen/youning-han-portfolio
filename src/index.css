@@ -1,0 +1,1 @@
+html,body,#root{min-height:100%}body{min-width:320px}button,a{font:inherit}a,button{transition:opacity .2s}a:hover,button:hover{opacity:.72}::selection{background:#a4472e;color:#fff}

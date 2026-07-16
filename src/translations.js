@@ -1,0 +1,64 @@
+const en = {
+  '首页':'Home','教育':'Education','科研':'Research','经历':'Experience','工具':'Tools','联系':'Contact','和我聊聊 ↗':'Let’s talk ↗','切换菜单':'Toggle menu','一键返回首页':'Back to home','首页':'Home',
+  '↳ 你好，我是韩佑宁':'↳ Hi, I’m Youning Han','连接文化，':'Connecting cultures,','理解人与人。':'understanding people.','“用真诚的沟通，让不同的声音彼此靠近。”':'“Bringing different voices closer through sincere communication.”',
+  '我是一名早稻田大学国际关系专业硕士生，关注社会、文化与人的真实经验。跨文化学习和研究经历让我善于倾听不同的声音，并通过真诚、清晰的沟通建立理解。在团队中，我愿意主动组织协作、承担责任，也能够耐心地把复杂的问题一步步推进到结果。专业之外，我热爱动物，也热爱认真生活本身；我喜欢观察日常里的细小美好，并在他人需要时尽力提供帮助。对我而言，能力不仅意味着完成任务，也意味着用善意、同理心和行动，为身边的人带来积极影响。':'I am a master’s student in International Relations at Waseda University, interested in society, culture, and people’s lived experiences. My cross-cultural studies and research have taught me to listen carefully and build understanding through clear, sincere communication. In teams, I take initiative, coordinate responsibly, and patiently move complex work toward tangible results. Beyond academics, I love animals, enjoy the small joys of everyday life, and am always willing to help. To me, capability is not only about completing tasks—it is also about creating a positive impact through empathy, kindness, and action.',
+  '寻找岗位':'Target roles','HR · 运营 · 市场':'HR · Operations · Marketing','地点':'Location','不限':'Flexible','跨文化交流':'Cross-cultural communication','沟通能力':'Communication','领导力':'Leadership','责任心':'Responsibility','了解我的经历 →':'Explore my journey →','联系我 ✦':'Contact me ✦','下载中文简历 ↓':'Download Chinese CV ↓',
+  '↙ 这就是我':'↙ That’s me','正在寻找实习':'Open to internships','韩佑宁的生活照片':'Youning Han photo gallery','上一张照片':'Previous photo','下一张照片':'Next photo','热爱动物':'Animal lover','热爱生活':'Love everyday life','乐于助人':'Always ready to help',
+  '去看更大的世界':'Exploring a wider world','毕业，也是新的开始':'Graduation, and a new beginning','把好奇心带在路上':'Taking curiosity on every journey','认真感受生活的四季':'Embracing every season of life','在不同城市收集故事':'Collecting stories across cities',
+  '三语沟通':'Trilingual communication','热情与共情':'Warmth & empathy','组织协作':'Team coordination','认真负责':'Reliable & responsible',
+  '在不同文化与语言之间建立理解，让不同的声音彼此靠近。':'Building understanding across cultures and languages, bringing different voices closer.','善于倾听、关注他人感受，也愿意主动提供支持和帮助。':'Listening with empathy, caring about others, and offering support proactively.','主动组织任务、协调反馈，并持续推进到形成明确结果。':'Organizing tasks, coordinating feedback, and moving work steadily toward clear outcomes.',
+  '教育背景':'Education','学习经历':'Academic journey','在多元的课堂与生活中，':'Through diverse classrooms and experiences,','形成理解世界的':'I developed my own','视角。':'perspective on the world.','本科':'Bachelor’s','硕士':'Master’s',
+  '立命馆大学':'Ritsumeikan University','早稻田大学':'Waseda University','国际关系 · 全球研究方向 · 文学学士':'International Relations · Global Studies · B.A.','国际关系 · 社会研究方向 · 文学硕士':'International Relations · Social Research · M.A.',
+  '在全英语授课的专业环境中完成国际关系学习，与来自不同国家和文化背景的同学共同讨论全球议题。本科绩点 4.3 / 5.0，专业排名前 5%，连续四年获得校级奖学金。':'Completed an English-taught International Relations program while discussing global issues with classmates from diverse cultural backgrounds. GPA: 4.3/5.0, ranked in the top 5% of the major, and received university scholarships for four consecutive years.',
+  '继续在英语授课环境中深化社会研究，研究课题聚焦中国社会中的婚姻、家庭与性别；同时担任国际关系专业课程助教。':'Continuing social research in an English-taught environment, focusing on marriage, family, and gender in Chinese society, while serving as a teaching assistant for an International Relations course.',
+  '国际社会学 A+':'International Sociology A+','国际政治经济 A+':'International Political Economy A+','现代工商管理 A+':'Modern Business Management A+','移民研究 A+':'Migration Studies A+','社会学质性研究方法 A+':'Qualitative Research Methods A+','日本历史与社会 A+':'Japanese History & Society A+',
+  '科研经历':'Research Experience','从真实的社会现场，':'From real social settings,','提炼有价值的':'I uncover meaningful','洞察。':'insights.','选择科研经历':'Select research project',
+  '中美民族主义话语对比分析':'Comparative Analysis of Chinese and American Nationalist Discourse','作为组长带领五人团队分配任务、汇总教授反馈并推进修改；完成 20 次线上访谈，结合定量、定性方法与扎根理论分析民族认同话语。':'Led a five-person team, assigned tasks, consolidated faculty feedback, and drove revisions. Conducted 20 online interviews and combined quantitative, qualitative, and grounded-theory methods to analyze nationalist discourse.','团队领导':'Team leadership','深度沟通':'In-depth communication','混合研究':'Mixed methods',
+  '独立完成文献综述与中国古籍语料分析，从经济、文化和政治三个维度识别“重男轻女”现象背后的成因；文章发表于国际会议并获得百余次下载。':'Independently completed a literature review and analysis of classical Chinese texts, examining son preference through economic, cultural, and political perspectives. The paper was presented internationally and downloaded over one hundred times.','独立研究':'Independent research','问题发现':'Problem discovery','语料分析':'Textual analysis',
+  '新农村建设调研':'New Rural Development Field Study','围绕乡村旅游建设下的居民生活变化开展田野调查，完成 10 次居民及从业者深度访谈；使用 MAXQDA 进行定性分析，识别发展问题并形成社区治理建议。':'Conducted fieldwork on changes in residents’ lives under rural tourism development, including 10 in-depth interviews with residents and practitioners. Used MAXQDA for qualitative analysis and developed community-governance recommendations.','访谈沟通':'Interviewing','洞察与建议':'Insights & recommendations',
+  '威廉姆斯文理学院 · 2022.8—2022.10':'Williams College · Aug–Oct 2022','武汉东西湖区慈惠街道 · 2025.7—2025.8':'Cihui Subdistrict, Dongxihu, Wuhan · Jul–Aug 2025',
+  '实习经历':'Experience','把研究能力，':'Turning research ability','转化为可靠的':'into reliable','执行。':'execution.','选择实习经历':'Select experience','历史社科图书编辑':'History & Social Sciences Editor','课程助教':'Teaching Assistant','南京大学出版社':'Nanjing University Press',
+  '校对国际关系与社会科学书稿；围绕热点议题开展政策和市场调研，协调学者与作者反馈并推进项目立项。':'Proofread International Relations and Social Sciences manuscripts; conducted policy and market research on current issues; coordinated feedback from scholars and authors to advance project proposals.','质量':'Quality','核查引注、译法与史实，确保内容符合学术及出版标准':'Verified citations, translations, and historical facts to meet academic and publishing standards.','研究':'Research','围绕国际关系热点开展政策与市场调研':'Conducted policy and market research on current International Relations topics.','协调':'Coordination','联系学者与作者，汇总反馈并推进项目立项':'Liaised with scholars and authors, consolidated feedback, and advanced project initiation.',
+  '负责课程资料上传、课堂分组与秩序维护、课后答疑，并协助导师完成期末论文评分与反馈。':'Managed course materials, class grouping and classroom flow, answered student questions, and assisted with final-paper grading and feedback.','组织':'Organization','准备并上传课程资料，安排课堂分组与流程':'Prepared course materials and organized classroom groups and workflows.','沟通':'Communication','回应学生问题并协助不同角色理解课程要求':'Responded to student questions and clarified course expectations.','反馈':'Feedback','协助完成期末论文评分与书面反馈':'Assisted with final-paper assessment and written feedback.','南京 · 中国':'Nanjing · China','东京 · 日本':'Tokyo · Japan',
+  '下一段经历':'Next chapter','期待与重视成长、愿意彼此信任的团队相遇。':'Looking forward to joining a team that values growth and mutual trust.','我正在寻找 2026 年 8–11 月的实习机会，希望将研究、沟通与协作能力带入真实业务，也在实践中继续学习。':'I am seeking an internship from August to November 2026, where I can bring research, communication, and collaboration skills into real business work while continuing to learn through practice.',
+  '语言能力':'Languages','在不同语言之间，':'Across languages,','准确地':'I communicate with','理解与表达。':'clarity and understanding.','英语':'English','日语':'Japanese','阅读单项满分':'Perfect reading score','英语课堂沟通':'English classroom communication','在日学习生活':'Years studying in Japan','融入':'Integration','理解社会文化':'Understanding society & culture',
+  '本科与硕士阶段均接受全英语专业教育，并担任英语授课专业课程助教。能够清晰表达观点、组织课堂沟通，并在多元文化环境中自然交流。':'Completed both undergraduate and graduate study in English and served as a teaching assistant in an English-taught course. Able to communicate ideas clearly, facilitate classroom interaction, and work naturally across cultures.','6 年':'6 years','助教':'TA','长期在日学习与生活':'Long-term study and life in Japan','在日本完成本科并继续攻读硕士，长期深入校园与日常社会环境。能够使用日语完成生活沟通，也对日本社会文化与交往方式形成了切身理解。':'Completed undergraduate study and continued graduate study in Japan, with deep exposure to campus and everyday social life. Able to communicate in daily Japanese and understand Japanese social norms through lived experience.','学术阅读 · 课堂表达 · 跨文化沟通':'Academic reading · Classroom communication · Cross-cultural exchange','社会融入 · 文化理解 · 日常沟通':'Social integration · Cultural understanding · Daily communication','选择语言能力':'Select language',
+  '工具能力':'Tools','从信息到成果':'From information to outcomes','让工具服务于沟通、分析，':'Tools that support communication and analysis,','也服务于':'and enable','最终交付。':'final delivery.','工具位于工作流的末端。对我而言，它们不是简历中孤立的关键词，而是把访谈、数据和想法转化为可协作、可验证、可交付成果的方法。':'Tools sit at the end of my workflow. They are not isolated résumé keywords, but practical ways to turn interviews, data, and ideas into collaborative, verifiable, and deliverable outcomes.','研究分析':'Research & Analysis','定量 · 定性 · 洞察':'Quantitative · Qualitative · Insights','办公交付':'Office & Delivery','文档 · 沟通 · 展示':'Documents · Communication · Presentation','AI 协作':'AI Collaboration','构思 · 整理 · 优化':'Ideation · Organization · Refinement','选择工具阶段':'Select tool category','当前阶段使用':'Tools in this category:','项工具':'tools',
+  '定量分析':'Quantitative analysis','用于数据整理、统计分析与结果验证，从数据中识别关系与趋势。':'Organizes data, performs statistical analysis, and validates results to identify relationships and trends.','定性分析':'Qualitative analysis','用于访谈编码、主题归纳与田野资料分析，形成结构化的研究发现。':'Codes interviews, identifies themes, and analyzes field materials to produce structured findings.','文本分析':'Text analysis','用于研究资料管理、文本检索、编码比较与主题关联分析。':'Manages research materials, retrieves text, compares codes, and analyzes thematic relationships.',
+  '文档协作':'Document collaboration','使用文档、表格与演示工具整理信息，支持团队协作与成果交付。':'Uses documents, spreadsheets, and presentations to organize information and support teamwork and delivery.','视觉呈现':'Visual presentation','用于制作清晰直观的视觉内容，让方案、信息与成果更易理解。':'Creates clear visual materials that make plans, information, and outcomes easier to understand.','沟通管理':'Communication management','用于邮件沟通、日程安排与任务协调，保持工作节奏清晰有序。':'Supports email communication, scheduling, and task coordination to keep work organized.',
+  '内容协作':'Content collaboration','用于梳理思路、辅助写作与快速形成可继续讨论的内容初稿。':'Helps structure ideas, support writing, and quickly produce drafts for further discussion.','信息整合':'Information synthesis','辅助整合多来源信息、比较不同视角，并拓展问题分析的方向。':'Synthesizes information from multiple sources, compares perspectives, and expands analytical directions.','长文处理':'Long-form processing','用于长文本阅读、结构提炼与表达优化，提高复杂内容的处理效率。':'Supports long-document reading, structural extraction, and writing refinement.',
+  '一起聊聊':'Let’s talk about','新的可能。':'new possibilities.','扫码添加微信':'Scan to add me on WeChat','韩佑宁微信二维码':'Youning Han WeChat QR code'
+}
+
+const originals = new WeakMap()
+
+function translatedRaw(raw, language){
+  if(language === 'zh') return raw
+  const key = raw.trim()
+  if(!key || !en[key]) return raw
+  const start = raw.indexOf(key)
+  return raw.slice(0,start) + en[key] + raw.slice(start + key.length)
+}
+
+export function applyLanguage(root, language){
+  if(!root) return
+  document.documentElement.lang = language === 'en' ? 'en' : 'zh-CN'
+  document.title = language === 'en' ? 'Youning Han — Portfolio' : '韩佑宁 Youning Han — Portfolio'
+  const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT)
+  let node
+  while((node = walker.nextNode())){
+    if(node.parentElement?.closest('.lang-toggle')) continue
+    if(!originals.has(node)) originals.set(node,node.nodeValue)
+    const original = originals.get(node)
+    node.nodeValue = language === 'en' ? translatedRaw(original,'en') : original
+  }
+  root.querySelectorAll('[aria-label],[alt]').forEach(el=>{
+    for(const attr of ['aria-label','alt']){
+      if(!el.hasAttribute(attr)) continue
+      const store = `data-original-${attr}`
+      if(!el.hasAttribute(store)) el.setAttribute(store,el.getAttribute(attr) || '')
+      const original = el.getAttribute(store) || ''
+      el.setAttribute(attr,language === 'en' ? (en[original] || original) : original)
+    }
+  })
+}
