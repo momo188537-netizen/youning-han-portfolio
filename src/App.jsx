@@ -2,13 +2,6 @@ import { useEffect, useLayoutEffect, useState } from 'react'
 import './App.css'
 import { applyLanguage } from './translations'
 
-const overview = [
-  { id:'education', no:'01', en:'EDUCATION', cn:'教育背景', title:'早稻田大学 · 文学硕士', desc:'国际关系（社会研究）· 立命馆大学国际关系文学学士' },
-  { id:'experience', no:'02', en:'EXPERIENCE', cn:'实习经历', title:'早稻田大学 · 课程助教', desc:'南京大学出版社 · 历史社科图书编辑' },
-  { id:'languages', no:'03', en:'LANGUAGES', cn:'语言能力', title:'中文 · English · 日本語', desc:'IELTS 7.0（阅读满分）· JLPT N2' },
-  { id:'research', no:'04', en:'RESEARCH', cn:'科研经历', title:'婚姻、家庭与性别研究', desc:'田野调研 · 论文发表 · 跨文化研究' },
-]
-
 const toolStages = [
   { id:'research', no:'01', title:'研究分析', en:'Research', summary:'定量 · 定性 · 洞察', tools:[
     { name:'SPSS', type:'定量分析', text:'用于数据整理、统计分析与结果验证，从数据中识别关系与趋势。' },
@@ -21,9 +14,8 @@ const toolStages = [
     { name:'Outlook', type:'沟通管理', text:'用于邮件沟通、日程安排与任务协调，保持工作节奏清晰有序。' },
   ]},
   { id:'ai', no:'03', title:'AI 协作', en:'AI Collaboration', summary:'构思 · 整理 · 优化', tools:[
-    { name:'ChatGPT', type:'内容协作', text:'用于梳理思路、辅助写作与快速形成可继续讨论的内容初稿。' },
-    { name:'Gemini', type:'信息整合', text:'辅助整合多来源信息、比较不同视角，并拓展问题分析的方向。' },
-    { name:'Claude', type:'长文处理', text:'用于长文本阅读、结构提炼与表达优化，提高复杂内容的处理效率。' },
+    { name:'AI Chat', type:'对话协作', text:'ChatGPT · Gemini · Claude' },
+    { name:'AI Agent', type:'智能执行', text:'Codex · WorkBuddy' },
   ]},
 ]
 
@@ -42,8 +34,9 @@ const profilePhotos = [
 ]
 
 const workItems = [
-  { id:'press', no:'01', date:'2026.2—2026.4', place:'南京 · 中国', org:'南京大学出版社', role:'历史社科图书编辑', summary:'校对国际关系与社会科学书稿；围绕热点议题开展政策和市场调研，协调学者与作者反馈并推进项目立项。', points:[['质量','核查引注、译法与史实，确保内容符合学术及出版标准'],['研究','围绕国际关系热点开展政策与市场调研'],['协调','联系学者与作者，汇总反馈并推进项目立项']] },
-  { id:'ta', no:'02', date:'2026.4—2026.7', place:'东京 · 日本', org:'早稻田大学', role:'课程助教', summary:'负责课程资料上传、课堂分组与秩序维护、课后答疑，并协助导师完成期末论文评分与反馈。', points:[['组织','准备并上传课程资料，安排课堂分组与流程'],['沟通','回应学生问题并协助不同角色理解课程要求'],['反馈','协助完成期末论文评分与书面反馈']] },
+  { id:'press', no:'01', date:'2026.2—2026.4', place:'南京 · 中国', org:'南京大学出版社', role:'历史社科图书出版策划编辑', summary:'校对国际关系与社会科学书稿；围绕热点议题开展政策和市场调研，协调学者与作者反馈并推进项目立项。', points:[['质量','核查引注、译法与史实，确保内容符合学术及出版标准'],['研究','围绕国际关系热点开展政策与市场调研'],['协调','联系学者与作者，汇总反馈并推进项目立项']] },
+  { id:'ta', no:'02', date:'2026.4—2026.7', place:'东京 · 日本', org:'早稻田大学', role:'课程助教', summary:'担任“日本历史和社会文化研究”课程助教，管理超过 50 人的跨文化班级；负责课程资料上传、课堂协调与秩序维护、课后答疑，并协助导师完成期末论文评分与反馈。', points:[['组织','管理超过 50 人的跨文化班级，准备并上传课程资料，安排课堂分组与流程'],['沟通','回应学生问题并协助不同文化背景的学生理解课程要求'],['反馈','协助完成期末论文评分与书面反馈']] },
+  { id:'bluefocus', no:'03', date:'2026.8—至今', place:'上海 · 中国', org:'蓝色光标', role:'HR（人才发展）', summary:'支持“蓝血超新星”“百一计划”“NEBU”等集团级人才发展与培训项目，参与从前期调研策划、过程执行到结项复盘的全流程工作。', points:[['线下培训项目运营','准备培训物料，协调跨部门合作与现场活动，并收集学员反馈、整理分析问卷数据'],['培训课程英语化落地','负责网络培训课程英语化与内容适配，推动人才发展项目面向国际团队落地'],['线上 AI 培训搭建','协助搭建线上 AI 培训平台，参与点对点及组对组培训计划的设计与实施']] },
 ]
 
 const languageItems = [
@@ -92,13 +85,13 @@ function App(){
           <p className="home-kicker">↳ 你好，我是韩佑宁</p>
           <h1>连接文化，<br/><i>理解人与人。</i></h1>
           <p className="home-quote">“用真诚的沟通，让不同的声音彼此靠近。”</p>
-          <p className="home-summary">我是一名早稻田大学国际关系专业硕士生，关注社会、文化与人的真实经验。跨文化学习和研究经历让我善于倾听不同的声音，并通过真诚、清晰的沟通建立理解。在团队中，我愿意主动组织协作、承担责任，也能够耐心地把复杂的问题一步步推进到结果。专业之外，我热爱动物，也热爱认真生活本身；我喜欢观察日常里的细小美好，并在他人需要时尽力提供帮助。对我而言，能力不仅意味着完成任务，也意味着用善意、同理心和行动，为身边的人带来积极影响。</p>
-          <div className="job-preference"><span><small>寻找岗位</small>HR · 运营 · 市场</span><span><small>地点</small>不限</span></div>
+          <p className="home-summary">我是一名早稻田大学国际关系专业硕士生，关注社会、文化与人之间的互动和沟通。跨文化学习与研究经历，让我能够倾听不同声音、理解多元需求，并在差异中建立共识。我热情开朗，乐于与人连接，也愿意在他人需要时主动提供支持；面对工作，我勤奋投入、认真负责，会持续推进任务直至取得结果。秉持“成人达己”的价值观，我希望在人力资源工作中连接个人与组织，帮助他人成长，也与团队共同实现目标。</p>
+          <div className="job-preference"><span><small>寻找岗位</small>HR</span><span><small>地点</small>不限</span></div>
           <div className="trait-tags"><span>跨文化交流</span><span>沟通能力</span><span>领导力</span><span>责任心</span><span>ENFJ</span></div>
-          <div className="home-actions"><a href="#education">了解我的经历 →</a><a href="#contact">联系我 ✦</a><a className="resume-download" href="/Han-Youning-CV-CN.pdf?v=2" download="韩佑宁中文简历.pdf">下载中文简历 ↓</a></div>
+          <div className="home-actions"><a href="#education">了解我的经历 →</a><a href="#contact">联系我 ✦</a><a className="resume-download" href="/Han-Youning-Resume-Chinese-2026.pdf" download="韩佑宁中文简历.pdf">下载中文简历 ↓</a><a className="resume-download" href="/Han-Youning-Resume-English-2026.pdf" download="Youning-Han-English-Resume.pdf">下载英文简历 ↓</a></div>
         </div>
         <div className="profile-board">
-          <span className="board-note note-me">↙ 这就是我</span><span className="board-note note-open"><i/>正在寻找实习</span>
+          <span className="board-note note-me">↙ 这就是我</span><span className="board-note note-open"><i/>正在寻找正式工作</span>
           <h2 className="meet-title">Meet Youning</h2>
           <div className="board-gallery" aria-label="韩佑宁的生活照片">
             {profilePhotos.map((photo,index)=>{
@@ -135,7 +128,7 @@ function App(){
       <div className="page-aside" data-reveal><div className="section-label"><span>03</span> EXPERIENCE</div><p>实习经历</p><div className="page-doodle">✦</div></div>
       <div className="page-content" data-reveal><p className="page-kicker">WORK & COLLABORATION</p><h2>把研究能力，<br/>转化为可靠的<span>执行。</span></h2>
         <div className="evidence-switcher work-switcher"><div className="evidence-tabs" role="tablist" aria-label="实习经历">{workItems.map(item=><button key={item.id} className={activeWork===item.id?'active':''} onClick={()=>setActiveWork(item.id)} role="tab" aria-selected={activeWork===item.id}><span>{item.no}</span><small>{item.role}</small><b>{item.org}</b><i>↗</i></button>)}</div>{workItems.filter(item=>item.id===activeWork).map(item=><article className="evidence-panel" key={item.id}><div className="evidence-meta"><span>{item.role}</span><time>{item.date}</time></div><h3>{item.org}</h3><p>{item.summary}</p><dl>{item.points.map(([term,desc])=><div key={term}><dt>{term}</dt><dd>{desc}</dd></div>)}</dl></article>)}</div>
-        <article className="opportunity-card"><span className="opportunity-plus">＋</span><div><small>NEXT CHAPTER · 下一段经历</small><h3>期待与重视成长、愿意彼此信任的团队相遇。</h3><p>我正在寻找 2026 年 8–11 月的实习机会，希望将研究、沟通与协作能力带入真实业务，也在实践中继续学习。</p></div><a href="#contact">和我聊聊 ↗</a></article>
+        <article className="opportunity-card"><span className="opportunity-plus">＋</span><div><small>NEXT CHAPTER · 职业新起点</small><h3>期待在这个秋天，遇见值得长期投入与共同成长的机会。</h3><p>学习、研究与实习经历，为我步入职场奠定了基础。这个秋天，我期待一份能够长期投入、持续成长的正式工作，与团队共同创造真实价值。</p></div><a href="#contact">和我聊聊 ↗</a></article>
       </div>
     </div></section>
 
